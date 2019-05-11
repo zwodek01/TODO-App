@@ -1,0 +1,236 @@
+.to-do {
+    min-height: 100vh;
+    background-image: linear-gradient(205deg, #6bde99 0%, #4c8dce 100%);
+
+    &__container {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 100px;
+        font-family: 'Just Another Hand';
+        text-align: center;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        color: #fff;
+        padding-top: 50px;
+    }
+
+    &__task {
+        text-align: center;
+        color: #fff;
+        font-family: 'Ubuntu', sans-serif;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+    &__input {
+        display: block;
+        margin: 40px auto;
+        border: none;
+        border-radius: 20px;
+        height: 30px;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    &__input:focus {
+        outline: 0;
+    }
+
+    &__buttons {
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__btn {
+        font-size: 20px;
+        font-family: 'Just Another Hand';
+        width: 80px;
+        margin: 0 20px;
+        height: 50px;
+        color: #fff;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__btn:active {
+        box-shadow: 0 5px 20px #666;
+    }
+
+    &__btn:focus {
+        outline: 0;
+    }
+
+    &__add {
+        background-color: #6bde99;
+    }
+
+    &__remove {
+        background-color: #e14689;
+    }
+
+    &__clear {
+        background-color: #878787;
+    }
+
+
+    &__list {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    &__listItem {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.16);
+        border-radius: 20px;
+        margin: 10px;
+        position: relative;
+        animation: 1s fadeIn;
+    }
+
+    &__text-task-number {
+        padding: 30px 0 10px;
+        font-size: 26px;
+        color: #000;
+        word-break: break-all;
+        border-bottom: 2px solid white;
+    }
+
+    &__text-task-description {
+        padding: 10px;
+        font-size: 20px;
+        color: #fff;
+        word-break: break-all;
+    }
+
+    &__text-task-description::first-letter {
+        text-transform: uppercase;
+    }
+
+    &__alert {
+        font-size: 55px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        font-family: 'Ubuntu', sans-serif;
+        color: #000;
+    }
+
+    &__btn--ok {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto;
+    }
+
+    .completed {
+        text-decoration: line-through;
+        animation: line 1s;
+        color: #fff;
+        opacity: 0.5;
+        transition: 1s;
+    }
+
+    .remove {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%);
+        font-size: 40px;
+        color: #e14689;
+
+    }
+
+    .div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        animation: 2s fadeIn;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .blur {
+        filter: blur(8px);
+    }
+
+    .checkbox {
+        display: inline-block;
+        margin: 0 auto;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes line {
+        from {
+            text-decoration-color: transparent;
+        }
+
+        to {
+            text-decoration-color: auto;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 900px) {
+        .to-do {
+            &__title {
+                font-size: 80px;
+                padding-top: 20px;
+            }
+
+            &__buttons {
+                padding-top: 20px;
+            }
+
+            &__list {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (min-height: 700px) {
+        .to-do {
+            &__btn {
+                font-size: 40px;
+                width: 150px;
+                transition: .4s;
+            }
+
+            &__btn:hover {
+                color: #000;
+            }
+        }
+    }
+}
