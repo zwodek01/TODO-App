@@ -12,7 +12,7 @@ https://zwodek01.github.io/ToDo-App/
 
 [PL]
 # To_Do_App
-Prosta aplikacja To Do napisana w jQuery + JavaScript
+Prosta aplikacja To Do.
 
 ## Technologie
 * Jquery version: 3.4.0
