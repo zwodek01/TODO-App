@@ -1,5 +1,4 @@
 [ENG]
-
 # To_Do_App
 Simple aplication To Do.
 
@@ -8,12 +7,10 @@ Simple aplication To Do.
 * JavaScript
 
 ### Live Demo
-```
 https://zwodek01.github.io/ToDo-App/
-```
+
 
 [PL]
-
 # To_Do_App
 Prosta aplikacja To Do napisana w jQuery + JavaScript
 
@@ -22,6 +19,4 @@ Prosta aplikacja To Do napisana w jQuery + JavaScript
 * JavaScript
 
 ### Live Demo
-```
 https://zwodek01.github.io/ToDo-App/
-```
