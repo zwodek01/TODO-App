@@ -1,11 +1,27 @@
-# ToDo-App
+[ENG]
 
-Live Demo: https://zwodek01.github.io/ToDo-App/
+# To_Do_App
+Simple aplication To Do.
 
-Zadanie rekrutacyjne do firmy MDBootstrap.
+## Technologies
+* Jquery version: 3.4.0
+* JavaScript
+
+### Live Demo
+```
+https://zwodek01.github.io/ToDo-App/
+```
+
+[PL]
+
+# To_Do_App
 Prosta aplikacja To Do napisana w jQuery + JavaScript
 
-//
+## Technologie
+* Jquery version: 3.4.0
+* JavaScript
 
-Recruitment task to MDBootsrap company.
-Simple aplication To Do wrote by jQuery + JavaScript
+### Live Demo
+```
+https://zwodek01.github.io/ToDo-App/
+```
